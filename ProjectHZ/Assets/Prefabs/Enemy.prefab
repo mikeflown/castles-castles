@@ -9,11 +9,10 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 9109223723429703454}
-  - component: {fileID: 2250806253166864582}
   - component: {fileID: 7569736441887913435}
   m_Layer: 0
-  m_Name: Utopec
-  m_TagString: Untagged
+  m_Name: Enemy
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -34,20 +33,6 @@ Transform:
   - {fileID: 5498073976018403749}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &2250806253166864582
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1674551479236601826}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 523a8420f76d14c498772fc88c1ab204, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _buildingSize: {x: 2, y: 2}
-  _renderer: {fileID: 5407458821162148246}
 --- !u!114 &7569736441887913435
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -226,11 +211,6 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
---- !u!137 &5407458821162148246 stripped
-SkinnedMeshRenderer:
-  m_CorrespondingSourceObject: {fileID: -9165797768001435688, guid: 4034513cdd98d424eb4d04e2e714d22b, type: 3}
-  m_PrefabInstance: {fileID: 5460522583539115598}
-  m_PrefabAsset: {fileID: 0}
 --- !u!4 &5498073976018403749 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 4034513cdd98d424eb4d04e2e714d22b, type: 3}
