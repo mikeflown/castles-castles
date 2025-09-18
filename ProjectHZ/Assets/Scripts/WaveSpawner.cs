@@ -5,19 +5,33 @@ using UnityEngine;
 public class WaveSpawner : MonoBehaviour
 {
     [SerializeField] private Waves[] _waves;
+    [SerializeField] private LineController[] _lineControllers;
+    public LineController[] LineControllers { get => _lineControllers; }
+
+    private static WaveSpawner _instance;
+    public static WaveSpawner Instance { get { return _instance; } }
     private int _currentEnemyIndex;
     private int _currentWaveIndex;
     private int _enemiesLeftToSpawn;
 
+    private void Awake()
+    {
+        if (_instance != null && _instance != this)
+            Destroy(this.gameObject);
+        else
+            _instance = this;
+    }
+
     private void Start()
     {
-        _enemiesLeftToSpawn = _waves[0].WaveSettings.Length;
+        if (_waves.Length > 0)
+            _enemiesLeftToSpawn = _waves[0].WaveSettings.Length;
         LaunchWave();
     }
 
     private IEnumerator SpawnEnemyInWave()
     {
-        if(_enemiesLeftToSpawn > 0)
+        if (_enemiesLeftToSpawn > 0)
         {
             yield return new WaitForSeconds(_waves[_currentWaveIndex]
                 .WaveSettings[_currentEnemyIndex]
@@ -26,6 +40,8 @@ public class WaveSpawner : MonoBehaviour
                 .WaveSettings[_currentEnemyIndex].Enemy,
                 _waves[_currentWaveIndex].WaveSettings[_currentEnemyIndex]
                 .NeededSpawner.transform.position, Quaternion.identity);
+            _waves[_currentWaveIndex].WaveSettings[_currentEnemyIndex]
+                .NeededSpawner.GetComponent<LineController>().EnemiesAlive++;
             _enemiesLeftToSpawn--;
             _currentEnemyIndex++;
             StartCoroutine(SpawnEnemyInWave());
@@ -48,7 +64,7 @@ public class WaveSpawner : MonoBehaviour
 }
 
 [System.Serializable]
-public class Waves 
+public class Waves
 {
     [SerializeField] private WaveSettings[] _waveSettings;
     public WaveSettings[] WaveSettings { get => _waveSettings; }
