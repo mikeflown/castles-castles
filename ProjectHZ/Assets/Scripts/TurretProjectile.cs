@@ -1,14 +1,13 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
 public class TurretProjectile : MonoBehaviour
 {
     [SerializeField] private float _moveSpeed;
+    [SerializeField] private int _damage;
 
     private void Awake()
     {
-        Destroy(this.gameObject, 15f);
+        Destroy(this.gameObject, 5f);
     }
 
     private void FixedUpdate()
@@ -18,8 +17,11 @@ public class TurretProjectile : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        TestWaves testWaves = other.GetComponent<TestWaves>();
-        if (testWaves != null)
+        EnemySettings enemySettings = other.GetComponent<EnemySettings>();
+        if (enemySettings != null)
+        {
+            enemySettings.ReceiveDamage(_damage);
             Destroy(this.gameObject);
+        }
     }
 }

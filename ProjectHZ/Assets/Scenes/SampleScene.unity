@@ -204,7 +204,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 101016961}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7ccc2f0df4e118241b2e48c707b00855, type: 3}
+  m_Script: {fileID: 11500000, guid: fcab998f5e265ac438f72d9630c6d521, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &120334095
@@ -326,6 +326,7 @@ GameObject:
   m_Component:
   - component: {fileID: 202502718}
   - component: {fileID: 202502719}
+  - component: {fileID: 202502720}
   m_Layer: 0
   m_Name: Enemy Spawner (1)
   m_TagString: Untagged
@@ -360,6 +361,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7ccc2f0df4e118241b2e48c707b00855, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  <EnemiesAlive>k__BackingField: 0
+--- !u!114 &202502720
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 202502717}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fcab998f5e265ac438f72d9630c6d521, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &278608491
 GameObject:
   m_ObjectHideFlags: 0
@@ -370,6 +384,7 @@ GameObject:
   m_Component:
   - component: {fileID: 278608492}
   - component: {fileID: 278608493}
+  - component: {fileID: 278608494}
   m_Layer: 0
   m_Name: Enemy Spawner (3)
   m_TagString: Untagged
@@ -402,6 +417,19 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 7ccc2f0df4e118241b2e48c707b00855, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  <EnemiesAlive>k__BackingField: 0
+--- !u!114 &278608494
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 278608491}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fcab998f5e265ac438f72d9630c6d521, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &290640346
@@ -440,10 +468,10 @@ MonoBehaviour:
       _spawnDelay: 1
   _lineControllers:
   - {fileID: 101016963}
-  - {fileID: 202502719}
-  - {fileID: 1251469550}
-  - {fileID: 278608493}
-  - {fileID: 1158202759}
+  - {fileID: 202502720}
+  - {fileID: 1251469551}
+  - {fileID: 278608494}
+  - {fileID: 1158202761}
 --- !u!4 &290640348
 Transform:
   m_ObjectHideFlags: 0
@@ -626,7 +654,7 @@ Transform:
   m_GameObject: {fileID: 330585543}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0.9659258, z: -0.2588191, w: 0}
-  m_LocalPosition: {x: 0, y: 10, z: 15}
+  m_LocalPosition: {x: 1.45, y: 10, z: 15}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1020,6 +1048,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1158202760}
   - component: {fileID: 1158202759}
+  - component: {fileID: 1158202761}
   m_Layer: 0
   m_Name: Enemy Spawner (4)
   m_TagString: Untagged
@@ -1039,6 +1068,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7ccc2f0df4e118241b2e48c707b00855, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  <EnemiesAlive>k__BackingField: 0
 --- !u!4 &1158202760
 Transform:
   m_ObjectHideFlags: 0
@@ -1054,6 +1084,18 @@ Transform:
   m_Children: []
   m_Father: {fileID: 574241043}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1158202761
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1158202758}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fcab998f5e265ac438f72d9630c6d521, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1251469548
 GameObject:
   m_ObjectHideFlags: 0
@@ -1064,6 +1106,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1251469549}
   - component: {fileID: 1251469550}
+  - component: {fileID: 1251469551}
   m_Layer: 0
   m_Name: Enemy Spawner (2)
   m_TagString: Untagged
@@ -1096,6 +1139,19 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 7ccc2f0df4e118241b2e48c707b00855, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  <EnemiesAlive>k__BackingField: 0
+--- !u!114 &1251469551
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1251469548}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fcab998f5e265ac438f72d9630c6d521, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1660057539 &9223372036854775807
