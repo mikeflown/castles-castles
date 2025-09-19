@@ -1029,8 +1029,8 @@ MonoBehaviour:
   _cardHolderPosition: {fileID: 901102237}
   _card: {fileID: 9101722277332088448, guid: 2bb76369c54dd9e42a9c23f096632384, type: 3}
   _cardSO:
-  - {fileID: 11400000, guid: b9fd153c0446a1a459ff864da99c5848, type: 2}
   - {fileID: 11400000, guid: d2f7364bdfcf48f4d8642eb1c5b1df75, type: 2}
+  - {fileID: 11400000, guid: b9fd153c0446a1a459ff864da99c5848, type: 2}
   _plantedCards:
   - {fileID: 0}
   - {fileID: 0}
