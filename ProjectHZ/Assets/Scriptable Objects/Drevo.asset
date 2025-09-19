@@ -10,8 +10,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fb732a2c5436c11468a8d114b54ef7a6, type: 3}
-  m_Name: Miner
+  m_Name: Drevo
   m_EditorClassIdentifier: 
-  icon: {fileID: 21300000, guid: f3a8af8672af273488b4c755e44a5707, type: 3}
-  prefab: {fileID: 3885039034251925984, guid: cef813b21e9e31248acdb3ec98c6d98f, type: 3}
-  cost: 5
+  icon: {fileID: 1498994486187017082, guid: 12357f913ed41484bb6f503e44f87b0b, type: 3}
+  prefab: {fileID: 3885039034251925984, guid: 85fa4b6da79ddfe4da8002274972038a, type: 3}
+  cost: 322

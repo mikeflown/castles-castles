@@ -57,7 +57,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _buildingSize: {x: 2, y: 2}
   _renderer: {fileID: 2650182432837312317}
-  _maxHealth: 12
+  _maxHealth: 8
   _healthBar: {fileID: 4006636300497778476}
   _healthBarImage: {fileID: 3183901711748098278}
 --- !u!114 &4890031396875538306
@@ -202,7 +202,7 @@ Transform:
   m_GameObject: {fileID: 6317703039999936501}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.658, y: 0.695, z: 1.167}
+  m_LocalPosition: {x: -0.658, y: 0.286, z: 1.149}
   m_LocalScale: {x: 3, y: 3, z: 3}
   m_ConstrainProportionsScale: 0
   m_Children: []

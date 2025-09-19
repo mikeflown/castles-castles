@@ -54,8 +54,8 @@ SphereCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Radius: 1.2161311
-  m_Center: {x: -0.48387766, y: -0.32580346, z: -0.90444326}
+  m_Radius: 7.6089654
+  m_Center: {x: -0.48387593, y: -0.32580325, z: -1.1330137}
 --- !u!114 &8513264047777369159
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -69,7 +69,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _moveSpeed: 0.0009
-  _damage: 4
+  _damage: 3
 --- !u!54 &-1249914437490527148
 Rigidbody:
   m_ObjectHideFlags: 0

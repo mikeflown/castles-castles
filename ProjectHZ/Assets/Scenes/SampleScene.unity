@@ -26,7 +26,7 @@ RenderSettings:
   m_AmbientIntensity: 1
   m_AmbientMode: 0
   m_SubtractiveShadowColor: {r: 0.42, g: 0.478, b: 0.627, a: 1}
-  m_SkyboxMaterial: {fileID: 10304, guid: 0000000000000000f000000000000000, type: 0}
+  m_SkyboxMaterial: {fileID: 2100000, guid: 97fca95f33987e548be9dd7c03cb1a96, type: 2}
   m_HaloStrength: 0.5
   m_FlareStrength: 1
   m_FlareFadeSpeed: 3
@@ -306,7 +306,7 @@ GameObject:
   - component: {fileID: 101016962}
   - component: {fileID: 101016963}
   m_Layer: 0
-  m_Name: Enemy Spawner
+  m_Name: Enemy Spawner up
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -433,7 +433,7 @@ GameObject:
   - component: {fileID: 202502718}
   - component: {fileID: 202502720}
   m_Layer: 0
-  m_Name: Enemy Spawner (1)
+  m_Name: Enemy Spawner hight
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -606,6 +606,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 485937436}
     m_Modifications:
+    - target: {fileID: -1306203501250959310, guid: 85fa4b6da79ddfe4da8002274972038a, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 408254832296088881, guid: 85fa4b6da79ddfe4da8002274972038a, type: 3}
       propertyPath: m_LocalPosition.x
       value: -0.023
@@ -646,9 +650,17 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 19.781998
       objectReference: {fileID: 0}
+    - target: {fileID: 2157462040419256636, guid: 85fa4b6da79ddfe4da8002274972038a, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.17200011
+      objectReference: {fileID: 0}
     - target: {fileID: 3885039034251925984, guid: 85fa4b6da79ddfe4da8002274972038a, type: 3}
       propertyPath: m_Name
       value: Drevo (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6486376248477500777, guid: 85fa4b6da79ddfe4da8002274972038a, type: 3}
+      propertyPath: _maxHealth
+      value: 500
       objectReference: {fileID: 0}
     - target: {fileID: 8072574016591659969, guid: 85fa4b6da79ddfe4da8002274972038a, type: 3}
       propertyPath: m_LocalPosition.x
@@ -772,7 +784,7 @@ GameObject:
   - component: {fileID: 278608492}
   - component: {fileID: 278608494}
   m_Layer: 0
-  m_Name: Enemy Spawner (3)
+  m_Name: Enemy Spawner low
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -922,9 +934,660 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _waves:
   - _waveSettings:
+    - _enemy: {fileID: 1674551479236601826, guid: 2fa8a78913164c44e9e6a34eb5db81dd, type: 3}
+      _neededSpawner: {fileID: 101016961}
+      _spawnDelay: 1.021
+    - _enemy: {fileID: 1674551479236601826, guid: 2fa8a78913164c44e9e6a34eb5db81dd, type: 3}
+      _neededSpawner: {fileID: 101016961}
+      _spawnDelay: 1.024
+    - _enemy: {fileID: 1674551479236601826, guid: 2fa8a78913164c44e9e6a34eb5db81dd, type: 3}
+      _neededSpawner: {fileID: 101016961}
+      _spawnDelay: 1.023
+    - _enemy: {fileID: 1674551479236601826, guid: 2fa8a78913164c44e9e6a34eb5db81dd, type: 3}
+      _neededSpawner: {fileID: 101016961}
+      _spawnDelay: 1.022
+    - _enemy: {fileID: 1674551479236601826, guid: e139209e18b12ca4aa96a7234bd8c8b1, type: 3}
+      _neededSpawner: {fileID: 202502717}
+      _spawnDelay: 3
+    - _enemy: {fileID: 1674551479236601826, guid: e139209e18b12ca4aa96a7234bd8c8b1, type: 3}
+      _neededSpawner: {fileID: 1251469548}
+      _spawnDelay: 3
+    - _enemy: {fileID: 1674551479236601826, guid: e139209e18b12ca4aa96a7234bd8c8b1, type: 3}
+      _neededSpawner: {fileID: 278608491}
+      _spawnDelay: 3
+    - _enemy: {fileID: 1674551479236601826, guid: 745b16db409757749be132c4554074bd, type: 3}
+      _neededSpawner: {fileID: 1158202758}
+      _spawnDelay: 3.01
+    - _enemy: {fileID: 1674551479236601826, guid: 745b16db409757749be132c4554074bd, type: 3}
+      _neededSpawner: {fileID: 1158202758}
+      _spawnDelay: 3.02
+    - _enemy: {fileID: 1674551479236601826, guid: 745b16db409757749be132c4554074bd, type: 3}
+      _neededSpawner: {fileID: 1158202758}
+      _spawnDelay: 3
+  - _waveSettings:
+    - _enemy: {fileID: 1674551479236601826, guid: e139209e18b12ca4aa96a7234bd8c8b1, type: 3}
+      _neededSpawner: {fileID: 101016961}
+      _spawnDelay: 2
+    - _enemy: {fileID: 1674551479236601826, guid: e139209e18b12ca4aa96a7234bd8c8b1, type: 3}
+      _neededSpawner: {fileID: 202502717}
+      _spawnDelay: 2
+    - _enemy: {fileID: 1674551479236601826, guid: e139209e18b12ca4aa96a7234bd8c8b1, type: 3}
+      _neededSpawner: {fileID: 1251469548}
+      _spawnDelay: 2
+    - _enemy: {fileID: 1674551479236601826, guid: e139209e18b12ca4aa96a7234bd8c8b1, type: 3}
+      _neededSpawner: {fileID: 278608491}
+      _spawnDelay: 2
+    - _enemy: {fileID: 1674551479236601826, guid: e139209e18b12ca4aa96a7234bd8c8b1, type: 3}
+      _neededSpawner: {fileID: 1158202758}
+      _spawnDelay: 2
+    - _enemy: {fileID: 1674551479236601826, guid: e139209e18b12ca4aa96a7234bd8c8b1, type: 3}
+      _neededSpawner: {fileID: 1158202758}
+      _spawnDelay: 2.2
+    - _enemy: {fileID: 1674551479236601826, guid: e139209e18b12ca4aa96a7234bd8c8b1, type: 3}
+      _neededSpawner: {fileID: 278608491}
+      _spawnDelay: 2.2
+    - _enemy: {fileID: 1674551479236601826, guid: e139209e18b12ca4aa96a7234bd8c8b1, type: 3}
+      _neededSpawner: {fileID: 1251469548}
+      _spawnDelay: 2.2
+    - _enemy: {fileID: 1674551479236601826, guid: e139209e18b12ca4aa96a7234bd8c8b1, type: 3}
+      _neededSpawner: {fileID: 202502717}
+      _spawnDelay: 2.2
+    - _enemy: {fileID: 1674551479236601826, guid: e139209e18b12ca4aa96a7234bd8c8b1, type: 3}
+      _neededSpawner: {fileID: 101016961}
+      _spawnDelay: 2.2
+  - _waveSettings:
+    - _enemy: {fileID: 1674551479236601826, guid: 2fa8a78913164c44e9e6a34eb5db81dd, type: 3}
+      _neededSpawner: {fileID: 101016961}
+      _spawnDelay: 1.5
+    - _enemy: {fileID: 1674551479236601826, guid: 2fa8a78913164c44e9e6a34eb5db81dd, type: 3}
+      _neededSpawner: {fileID: 101016961}
+      _spawnDelay: 1.6
+    - _enemy: {fileID: 101016961}
+      _neededSpawner: {fileID: 101016961}
+      _spawnDelay: 1.7
+    - _enemy: {fileID: 1674551479236601826, guid: 2fa8a78913164c44e9e6a34eb5db81dd, type: 3}
+      _neededSpawner: {fileID: 202502717}
+      _spawnDelay: 1.5
+    - _enemy: {fileID: 1674551479236601826, guid: 2fa8a78913164c44e9e6a34eb5db81dd, type: 3}
+      _neededSpawner: {fileID: 202502717}
+      _spawnDelay: 1.6
+    - _enemy: {fileID: 1674551479236601826, guid: 2fa8a78913164c44e9e6a34eb5db81dd, type: 3}
+      _neededSpawner: {fileID: 202502717}
+      _spawnDelay: 1.7
+    - _enemy: {fileID: 1674551479236601826, guid: 2fa8a78913164c44e9e6a34eb5db81dd, type: 3}
+      _neededSpawner: {fileID: 1251469548}
+      _spawnDelay: 1.5
+    - _enemy: {fileID: 1674551479236601826, guid: 2fa8a78913164c44e9e6a34eb5db81dd, type: 3}
+      _neededSpawner: {fileID: 1251469548}
+      _spawnDelay: 1.6
+    - _enemy: {fileID: 1674551479236601826, guid: 2fa8a78913164c44e9e6a34eb5db81dd, type: 3}
+      _neededSpawner: {fileID: 1251469548}
+      _spawnDelay: 1.7
+    - _enemy: {fileID: 1674551479236601826, guid: 2fa8a78913164c44e9e6a34eb5db81dd, type: 3}
+      _neededSpawner: {fileID: 278608491}
+      _spawnDelay: 1.5
+    - _enemy: {fileID: 1674551479236601826, guid: 2fa8a78913164c44e9e6a34eb5db81dd, type: 3}
+      _neededSpawner: {fileID: 278608491}
+      _spawnDelay: 1.6
+    - _enemy: {fileID: 1674551479236601826, guid: 2fa8a78913164c44e9e6a34eb5db81dd, type: 3}
+      _neededSpawner: {fileID: 278608491}
+      _spawnDelay: 1.5
+    - _enemy: {fileID: 1674551479236601826, guid: 2fa8a78913164c44e9e6a34eb5db81dd, type: 3}
+      _neededSpawner: {fileID: 278608491}
+      _spawnDelay: 1.5
+    - _enemy: {fileID: 1674551479236601826, guid: 2fa8a78913164c44e9e6a34eb5db81dd, type: 3}
+      _neededSpawner: {fileID: 1158202758}
+      _spawnDelay: 1.7
+    - _enemy: {fileID: 1674551479236601826, guid: 2fa8a78913164c44e9e6a34eb5db81dd, type: 3}
+      _neededSpawner: {fileID: 1158202758}
+      _spawnDelay: 1.6
+  - _waveSettings:
+    - _enemy: {fileID: 1674551479236601826, guid: ceb9de32f4bbd374f97e0634ebab6325, type: 3}
+      _neededSpawner: {fileID: 1158202758}
+      _spawnDelay: 0
     - _enemy: {fileID: 1674551479236601826, guid: 745b16db409757749be132c4554074bd, type: 3}
       _neededSpawner: {fileID: 101016961}
       _spawnDelay: 1
+    - _enemy: {fileID: 1674551479236601826, guid: 745b16db409757749be132c4554074bd, type: 3}
+      _neededSpawner: {fileID: 101016961}
+      _spawnDelay: 1
+    - _enemy: {fileID: 1674551479236601826, guid: 745b16db409757749be132c4554074bd, type: 3}
+      _neededSpawner: {fileID: 1251469548}
+      _spawnDelay: 1
+    - _enemy: {fileID: 1674551479236601826, guid: ceb9de32f4bbd374f97e0634ebab6325, type: 3}
+      _neededSpawner: {fileID: 202502717}
+      _spawnDelay: 3
+    - _enemy: {fileID: 1674551479236601826, guid: ceb9de32f4bbd374f97e0634ebab6325, type: 3}
+      _neededSpawner: {fileID: 1251469548}
+      _spawnDelay: 1
+    - _enemy: {fileID: 1674551479236601826, guid: 6b49f0b72acec9340b16eee9ebc6d5ff, type: 3}
+      _neededSpawner: {fileID: 1158202758}
+      _spawnDelay: 3
+    - _enemy: {fileID: 1674551479236601826, guid: 6b49f0b72acec9340b16eee9ebc6d5ff, type: 3}
+      _neededSpawner: {fileID: 278608491}
+      _spawnDelay: 2
+    - _enemy: {fileID: 1674551479236601826, guid: 6b49f0b72acec9340b16eee9ebc6d5ff, type: 3}
+      _neededSpawner: {fileID: 1251469548}
+      _spawnDelay: 5
+    - _enemy: {fileID: 1674551479236601826, guid: 6b49f0b72acec9340b16eee9ebc6d5ff, type: 3}
+      _neededSpawner: {fileID: 202502717}
+      _spawnDelay: 3
+    - _enemy: {fileID: 1674551479236601826, guid: 6b49f0b72acec9340b16eee9ebc6d5ff, type: 3}
+      _neededSpawner: {fileID: 202502717}
+      _spawnDelay: 6
+    - _enemy: {fileID: 1674551479236601826, guid: 6b49f0b72acec9340b16eee9ebc6d5ff, type: 3}
+      _neededSpawner: {fileID: 202502717}
+      _spawnDelay: 6
+    - _enemy: {fileID: 1674551479236601826, guid: 6b49f0b72acec9340b16eee9ebc6d5ff, type: 3}
+      _neededSpawner: {fileID: 101016961}
+      _spawnDelay: 6
+    - _enemy: {fileID: 1674551479236601826, guid: 6b49f0b72acec9340b16eee9ebc6d5ff, type: 3}
+      _neededSpawner: {fileID: 101016961}
+      _spawnDelay: 6
+    - _enemy: {fileID: 1674551479236601826, guid: 6b49f0b72acec9340b16eee9ebc6d5ff, type: 3}
+      _neededSpawner: {fileID: 1251469548}
+      _spawnDelay: 6
+    - _enemy: {fileID: 1674551479236601826, guid: 6b49f0b72acec9340b16eee9ebc6d5ff, type: 3}
+      _neededSpawner: {fileID: 1251469548}
+      _spawnDelay: 6
+    - _enemy: {fileID: 1674551479236601826, guid: 6b49f0b72acec9340b16eee9ebc6d5ff, type: 3}
+      _neededSpawner: {fileID: 278608491}
+      _spawnDelay: 6
+    - _enemy: {fileID: 1674551479236601826, guid: 6b49f0b72acec9340b16eee9ebc6d5ff, type: 3}
+      _neededSpawner: {fileID: 278608491}
+      _spawnDelay: 6
+    - _enemy: {fileID: 1674551479236601826, guid: 6b49f0b72acec9340b16eee9ebc6d5ff, type: 3}
+      _neededSpawner: {fileID: 1158202758}
+      _spawnDelay: 6
+    - _enemy: {fileID: 1674551479236601826, guid: 6b49f0b72acec9340b16eee9ebc6d5ff, type: 3}
+      _neededSpawner: {fileID: 1158202758}
+      _spawnDelay: 6
+  - _waveSettings:
+    - _enemy: {fileID: 1674551479236601826, guid: 745b16db409757749be132c4554074bd, type: 3}
+      _neededSpawner: {fileID: 101016961}
+      _spawnDelay: 1
+    - _enemy: {fileID: 1674551479236601826, guid: 745b16db409757749be132c4554074bd, type: 3}
+      _neededSpawner: {fileID: 101016961}
+      _spawnDelay: 1.1
+    - _enemy: {fileID: 1674551479236601826, guid: 745b16db409757749be132c4554074bd, type: 3}
+      _neededSpawner: {fileID: 101016961}
+      _spawnDelay: 1.2
+    - _enemy: {fileID: 1674551479236601826, guid: 745b16db409757749be132c4554074bd, type: 3}
+      _neededSpawner: {fileID: 101016961}
+      _spawnDelay: 1.3
+    - _enemy: {fileID: 1674551479236601826, guid: 745b16db409757749be132c4554074bd, type: 3}
+      _neededSpawner: {fileID: 101016961}
+      _spawnDelay: 1.4
+    - _enemy: {fileID: 1674551479236601826, guid: 745b16db409757749be132c4554074bd, type: 3}
+      _neededSpawner: {fileID: 202502717}
+      _spawnDelay: 1
+    - _enemy: {fileID: 1674551479236601826, guid: 745b16db409757749be132c4554074bd, type: 3}
+      _neededSpawner: {fileID: 202502717}
+      _spawnDelay: 1.1
+    - _enemy: {fileID: 1674551479236601826, guid: 745b16db409757749be132c4554074bd, type: 3}
+      _neededSpawner: {fileID: 202502717}
+      _spawnDelay: 1.2
+    - _enemy: {fileID: 1674551479236601826, guid: 745b16db409757749be132c4554074bd, type: 3}
+      _neededSpawner: {fileID: 202502717}
+      _spawnDelay: 1.3
+    - _enemy: {fileID: 1674551479236601826, guid: 745b16db409757749be132c4554074bd, type: 3}
+      _neededSpawner: {fileID: 202502717}
+      _spawnDelay: 1.4
+    - _enemy: {fileID: 1674551479236601826, guid: 745b16db409757749be132c4554074bd, type: 3}
+      _neededSpawner: {fileID: 1251469548}
+      _spawnDelay: 1
+    - _enemy: {fileID: 1674551479236601826, guid: 745b16db409757749be132c4554074bd, type: 3}
+      _neededSpawner: {fileID: 1251469548}
+      _spawnDelay: 1.1
+    - _enemy: {fileID: 1674551479236601826, guid: 745b16db409757749be132c4554074bd, type: 3}
+      _neededSpawner: {fileID: 1251469548}
+      _spawnDelay: 1.2
+    - _enemy: {fileID: 1674551479236601826, guid: 745b16db409757749be132c4554074bd, type: 3}
+      _neededSpawner: {fileID: 1251469548}
+      _spawnDelay: 1.3
+    - _enemy: {fileID: 1674551479236601826, guid: 745b16db409757749be132c4554074bd, type: 3}
+      _neededSpawner: {fileID: 1251469548}
+      _spawnDelay: 1.4
+    - _enemy: {fileID: 1674551479236601826, guid: 745b16db409757749be132c4554074bd, type: 3}
+      _neededSpawner: {fileID: 278608491}
+      _spawnDelay: 1
+    - _enemy: {fileID: 1674551479236601826, guid: 745b16db409757749be132c4554074bd, type: 3}
+      _neededSpawner: {fileID: 278608491}
+      _spawnDelay: 1.1
+    - _enemy: {fileID: 1674551479236601826, guid: 745b16db409757749be132c4554074bd, type: 3}
+      _neededSpawner: {fileID: 278608491}
+      _spawnDelay: 1.2
+    - _enemy: {fileID: 1674551479236601826, guid: 745b16db409757749be132c4554074bd, type: 3}
+      _neededSpawner: {fileID: 278608491}
+      _spawnDelay: 1.3
+    - _enemy: {fileID: 1674551479236601826, guid: 745b16db409757749be132c4554074bd, type: 3}
+      _neededSpawner: {fileID: 278608491}
+      _spawnDelay: 1.4
+    - _enemy: {fileID: 1674551479236601826, guid: 745b16db409757749be132c4554074bd, type: 3}
+      _neededSpawner: {fileID: 1158202758}
+      _spawnDelay: 1
+    - _enemy: {fileID: 1674551479236601826, guid: 745b16db409757749be132c4554074bd, type: 3}
+      _neededSpawner: {fileID: 1158202758}
+      _spawnDelay: 1.1
+    - _enemy: {fileID: 1674551479236601826, guid: 745b16db409757749be132c4554074bd, type: 3}
+      _neededSpawner: {fileID: 278608491}
+      _spawnDelay: 1.4
+    - _enemy: {fileID: 1674551479236601826, guid: 745b16db409757749be132c4554074bd, type: 3}
+      _neededSpawner: {fileID: 1158202758}
+      _spawnDelay: 1.3
+    - _enemy: {fileID: 1674551479236601826, guid: 745b16db409757749be132c4554074bd, type: 3}
+      _neededSpawner: {fileID: 278608491}
+      _spawnDelay: 1.4
+  - _waveSettings:
+    - _enemy: {fileID: 1674551479236601826, guid: 9255cd4914bda6440b9554e0bc3b84ed, type: 3}
+      _neededSpawner: {fileID: 1251469548}
+      _spawnDelay: 8
+  - _waveSettings:
+    - _enemy: {fileID: 1674551479236601826, guid: 1343495f03a0da24cbf55b44bfc01071, type: 3}
+      _neededSpawner: {fileID: 1251469548}
+      _spawnDelay: 2
+    - _enemy: {fileID: 1674551479236601826, guid: 1343495f03a0da24cbf55b44bfc01071, type: 3}
+      _neededSpawner: {fileID: 1251469548}
+      _spawnDelay: 2
+    - _enemy: {fileID: 1674551479236601826, guid: 1343495f03a0da24cbf55b44bfc01071, type: 3}
+      _neededSpawner: {fileID: 1251469548}
+      _spawnDelay: 2.05
+    - _enemy: {fileID: 1674551479236601826, guid: 1343495f03a0da24cbf55b44bfc01071, type: 3}
+      _neededSpawner: {fileID: 1251469548}
+      _spawnDelay: 2.05
+    - _enemy: {fileID: 1674551479236601826, guid: 1343495f03a0da24cbf55b44bfc01071, type: 3}
+      _neededSpawner: {fileID: 1251469548}
+      _spawnDelay: 2.1
+    - _enemy: {fileID: 1674551479236601826, guid: 1343495f03a0da24cbf55b44bfc01071, type: 3}
+      _neededSpawner: {fileID: 1251469548}
+      _spawnDelay: 2.1
+    - _enemy: {fileID: 1674551479236601826, guid: 1343495f03a0da24cbf55b44bfc01071, type: 3}
+      _neededSpawner: {fileID: 1251469548}
+      _spawnDelay: 2.15
+    - _enemy: {fileID: 1674551479236601826, guid: 1343495f03a0da24cbf55b44bfc01071, type: 3}
+      _neededSpawner: {fileID: 202502717}
+      _spawnDelay: 2.15
+    - _enemy: {fileID: 1674551479236601826, guid: 1343495f03a0da24cbf55b44bfc01071, type: 3}
+      _neededSpawner: {fileID: 1251469548}
+      _spawnDelay: 2.2
+    - _enemy: {fileID: 1674551479236601826, guid: 1343495f03a0da24cbf55b44bfc01071, type: 3}
+      _neededSpawner: {fileID: 202502717}
+      _spawnDelay: 2.2
+    - _enemy: {fileID: 1674551479236601826, guid: 1343495f03a0da24cbf55b44bfc01071, type: 3}
+      _neededSpawner: {fileID: 1251469548}
+      _spawnDelay: 2.25
+    - _enemy: {fileID: 1674551479236601826, guid: 1343495f03a0da24cbf55b44bfc01071, type: 3}
+      _neededSpawner: {fileID: 202502717}
+      _spawnDelay: 2.25
+  - _waveSettings:
+    - _enemy: {fileID: 1674551479236601826, guid: ceb9de32f4bbd374f97e0634ebab6325, type: 3}
+      _neededSpawner: {fileID: 101016961}
+      _spawnDelay: 2
+    - _enemy: {fileID: 1674551479236601826, guid: ceb9de32f4bbd374f97e0634ebab6325, type: 3}
+      _neededSpawner: {fileID: 101016961}
+      _spawnDelay: 2
+    - _enemy: {fileID: 1674551479236601826, guid: ceb9de32f4bbd374f97e0634ebab6325, type: 3}
+      _neededSpawner: {fileID: 202502717}
+      _spawnDelay: 2
+    - _enemy: {fileID: 1674551479236601826, guid: ceb9de32f4bbd374f97e0634ebab6325, type: 3}
+      _neededSpawner: {fileID: 202502717}
+      _spawnDelay: 2
+    - _enemy: {fileID: 1674551479236601826, guid: ceb9de32f4bbd374f97e0634ebab6325, type: 3}
+      _neededSpawner: {fileID: 1251469548}
+      _spawnDelay: 2
+    - _enemy: {fileID: 1674551479236601826, guid: ceb9de32f4bbd374f97e0634ebab6325, type: 3}
+      _neededSpawner: {fileID: 1251469548}
+      _spawnDelay: 3
+    - _enemy: {fileID: 1674551479236601826, guid: ceb9de32f4bbd374f97e0634ebab6325, type: 3}
+      _neededSpawner: {fileID: 278608491}
+      _spawnDelay: 2
+    - _enemy: {fileID: 1674551479236601826, guid: ceb9de32f4bbd374f97e0634ebab6325, type: 3}
+      _neededSpawner: {fileID: 278608491}
+      _spawnDelay: 3
+    - _enemy: {fileID: 1674551479236601826, guid: ceb9de32f4bbd374f97e0634ebab6325, type: 3}
+      _neededSpawner: {fileID: 1158202758}
+      _spawnDelay: 2
+    - _enemy: {fileID: 1674551479236601826, guid: ceb9de32f4bbd374f97e0634ebab6325, type: 3}
+      _neededSpawner: {fileID: 1158202758}
+      _spawnDelay: 3
+  - _waveSettings:
+    - _enemy: {fileID: 1674551479236601826, guid: 2fa8a78913164c44e9e6a34eb5db81dd, type: 3}
+      _neededSpawner: {fileID: 101016961}
+      _spawnDelay: 1.021
+    - _enemy: {fileID: 1674551479236601826, guid: 2fa8a78913164c44e9e6a34eb5db81dd, type: 3}
+      _neededSpawner: {fileID: 101016961}
+      _spawnDelay: 1.024
+    - _enemy: {fileID: 1674551479236601826, guid: 2fa8a78913164c44e9e6a34eb5db81dd, type: 3}
+      _neededSpawner: {fileID: 101016961}
+      _spawnDelay: 1.023
+    - _enemy: {fileID: 1674551479236601826, guid: 2fa8a78913164c44e9e6a34eb5db81dd, type: 3}
+      _neededSpawner: {fileID: 101016961}
+      _spawnDelay: 1.022
+    - _enemy: {fileID: 1674551479236601826, guid: e139209e18b12ca4aa96a7234bd8c8b1, type: 3}
+      _neededSpawner: {fileID: 202502717}
+      _spawnDelay: 3
+    - _enemy: {fileID: 1674551479236601826, guid: e139209e18b12ca4aa96a7234bd8c8b1, type: 3}
+      _neededSpawner: {fileID: 1251469548}
+      _spawnDelay: 3
+    - _enemy: {fileID: 1674551479236601826, guid: e139209e18b12ca4aa96a7234bd8c8b1, type: 3}
+      _neededSpawner: {fileID: 278608491}
+      _spawnDelay: 3
+    - _enemy: {fileID: 1674551479236601826, guid: 745b16db409757749be132c4554074bd, type: 3}
+      _neededSpawner: {fileID: 1158202758}
+      _spawnDelay: 3.01
+    - _enemy: {fileID: 1674551479236601826, guid: 745b16db409757749be132c4554074bd, type: 3}
+      _neededSpawner: {fileID: 1158202758}
+      _spawnDelay: 3.02
+    - _enemy: {fileID: 1674551479236601826, guid: 745b16db409757749be132c4554074bd, type: 3}
+      _neededSpawner: {fileID: 1158202758}
+      _spawnDelay: 3
+  - _waveSettings:
+    - _enemy: {fileID: 1674551479236601826, guid: 745b16db409757749be132c4554074bd, type: 3}
+      _neededSpawner: {fileID: 101016961}
+      _spawnDelay: 1
+    - _enemy: {fileID: 1674551479236601826, guid: 745b16db409757749be132c4554074bd, type: 3}
+      _neededSpawner: {fileID: 101016961}
+      _spawnDelay: 1.1
+    - _enemy: {fileID: 1674551479236601826, guid: 745b16db409757749be132c4554074bd, type: 3}
+      _neededSpawner: {fileID: 101016961}
+      _spawnDelay: 1.2
+    - _enemy: {fileID: 1674551479236601826, guid: 745b16db409757749be132c4554074bd, type: 3}
+      _neededSpawner: {fileID: 101016961}
+      _spawnDelay: 1.3
+    - _enemy: {fileID: 1674551479236601826, guid: 745b16db409757749be132c4554074bd, type: 3}
+      _neededSpawner: {fileID: 101016961}
+      _spawnDelay: 1.4
+    - _enemy: {fileID: 1674551479236601826, guid: 745b16db409757749be132c4554074bd, type: 3}
+      _neededSpawner: {fileID: 202502717}
+      _spawnDelay: 1
+    - _enemy: {fileID: 1674551479236601826, guid: 745b16db409757749be132c4554074bd, type: 3}
+      _neededSpawner: {fileID: 202502717}
+      _spawnDelay: 1.1
+    - _enemy: {fileID: 1674551479236601826, guid: 745b16db409757749be132c4554074bd, type: 3}
+      _neededSpawner: {fileID: 202502717}
+      _spawnDelay: 1.2
+    - _enemy: {fileID: 1674551479236601826, guid: 745b16db409757749be132c4554074bd, type: 3}
+      _neededSpawner: {fileID: 202502717}
+      _spawnDelay: 1.3
+    - _enemy: {fileID: 1674551479236601826, guid: 745b16db409757749be132c4554074bd, type: 3}
+      _neededSpawner: {fileID: 202502717}
+      _spawnDelay: 1.4
+    - _enemy: {fileID: 1674551479236601826, guid: 745b16db409757749be132c4554074bd, type: 3}
+      _neededSpawner: {fileID: 1251469548}
+      _spawnDelay: 1
+    - _enemy: {fileID: 1674551479236601826, guid: 745b16db409757749be132c4554074bd, type: 3}
+      _neededSpawner: {fileID: 1251469548}
+      _spawnDelay: 1.1
+    - _enemy: {fileID: 1674551479236601826, guid: 745b16db409757749be132c4554074bd, type: 3}
+      _neededSpawner: {fileID: 1251469548}
+      _spawnDelay: 1.2
+    - _enemy: {fileID: 1674551479236601826, guid: 745b16db409757749be132c4554074bd, type: 3}
+      _neededSpawner: {fileID: 1251469548}
+      _spawnDelay: 1.3
+    - _enemy: {fileID: 1674551479236601826, guid: 745b16db409757749be132c4554074bd, type: 3}
+      _neededSpawner: {fileID: 1251469548}
+      _spawnDelay: 1.4
+    - _enemy: {fileID: 1674551479236601826, guid: 745b16db409757749be132c4554074bd, type: 3}
+      _neededSpawner: {fileID: 278608491}
+      _spawnDelay: 1
+    - _enemy: {fileID: 1674551479236601826, guid: 745b16db409757749be132c4554074bd, type: 3}
+      _neededSpawner: {fileID: 278608491}
+      _spawnDelay: 1.1
+    - _enemy: {fileID: 1674551479236601826, guid: 745b16db409757749be132c4554074bd, type: 3}
+      _neededSpawner: {fileID: 278608491}
+      _spawnDelay: 1.2
+    - _enemy: {fileID: 1674551479236601826, guid: 745b16db409757749be132c4554074bd, type: 3}
+      _neededSpawner: {fileID: 278608491}
+      _spawnDelay: 1.3
+    - _enemy: {fileID: 1674551479236601826, guid: 745b16db409757749be132c4554074bd, type: 3}
+      _neededSpawner: {fileID: 278608491}
+      _spawnDelay: 1.4
+    - _enemy: {fileID: 1674551479236601826, guid: 745b16db409757749be132c4554074bd, type: 3}
+      _neededSpawner: {fileID: 1158202758}
+      _spawnDelay: 1
+    - _enemy: {fileID: 1674551479236601826, guid: 745b16db409757749be132c4554074bd, type: 3}
+      _neededSpawner: {fileID: 1158202758}
+      _spawnDelay: 1.1
+    - _enemy: {fileID: 1674551479236601826, guid: 745b16db409757749be132c4554074bd, type: 3}
+      _neededSpawner: {fileID: 278608491}
+      _spawnDelay: 1.4
+    - _enemy: {fileID: 1674551479236601826, guid: 745b16db409757749be132c4554074bd, type: 3}
+      _neededSpawner: {fileID: 1158202758}
+      _spawnDelay: 1.3
+    - _enemy: {fileID: 1674551479236601826, guid: 745b16db409757749be132c4554074bd, type: 3}
+      _neededSpawner: {fileID: 278608491}
+      _spawnDelay: 1.4
+  - _waveSettings:
+    - _enemy: {fileID: 1674551479236601826, guid: 7e7d1b75f8efc42478494ca744fce3b9, type: 3}
+      _neededSpawner: {fileID: 202502717}
+      _spawnDelay: 8
+    - _enemy: {fileID: 1674551479236601826, guid: 7e7d1b75f8efc42478494ca744fce3b9, type: 3}
+      _neededSpawner: {fileID: 278608491}
+      _spawnDelay: 8
+  - _waveSettings:
+    - _enemy: {fileID: 1674551479236601826, guid: ceb9de32f4bbd374f97e0634ebab6325, type: 3}
+      _neededSpawner: {fileID: 1158202758}
+      _spawnDelay: 0
+    - _enemy: {fileID: 1674551479236601826, guid: 745b16db409757749be132c4554074bd, type: 3}
+      _neededSpawner: {fileID: 101016961}
+      _spawnDelay: 1
+    - _enemy: {fileID: 1674551479236601826, guid: 745b16db409757749be132c4554074bd, type: 3}
+      _neededSpawner: {fileID: 101016961}
+      _spawnDelay: 1
+    - _enemy: {fileID: 1674551479236601826, guid: 745b16db409757749be132c4554074bd, type: 3}
+      _neededSpawner: {fileID: 1251469548}
+      _spawnDelay: 1
+    - _enemy: {fileID: 1674551479236601826, guid: ceb9de32f4bbd374f97e0634ebab6325, type: 3}
+      _neededSpawner: {fileID: 202502717}
+      _spawnDelay: 3
+    - _enemy: {fileID: 1674551479236601826, guid: ceb9de32f4bbd374f97e0634ebab6325, type: 3}
+      _neededSpawner: {fileID: 1251469548}
+      _spawnDelay: 1
+    - _enemy: {fileID: 1674551479236601826, guid: 6b49f0b72acec9340b16eee9ebc6d5ff, type: 3}
+      _neededSpawner: {fileID: 1158202758}
+      _spawnDelay: 3
+    - _enemy: {fileID: 1674551479236601826, guid: 6b49f0b72acec9340b16eee9ebc6d5ff, type: 3}
+      _neededSpawner: {fileID: 278608491}
+      _spawnDelay: 2
+    - _enemy: {fileID: 1674551479236601826, guid: 6b49f0b72acec9340b16eee9ebc6d5ff, type: 3}
+      _neededSpawner: {fileID: 1251469548}
+      _spawnDelay: 5
+    - _enemy: {fileID: 1674551479236601826, guid: 6b49f0b72acec9340b16eee9ebc6d5ff, type: 3}
+      _neededSpawner: {fileID: 202502717}
+      _spawnDelay: 3
+    - _enemy: {fileID: 1674551479236601826, guid: 6b49f0b72acec9340b16eee9ebc6d5ff, type: 3}
+      _neededSpawner: {fileID: 202502717}
+      _spawnDelay: 6
+    - _enemy: {fileID: 1674551479236601826, guid: 6b49f0b72acec9340b16eee9ebc6d5ff, type: 3}
+      _neededSpawner: {fileID: 202502717}
+      _spawnDelay: 6
+    - _enemy: {fileID: 1674551479236601826, guid: 6b49f0b72acec9340b16eee9ebc6d5ff, type: 3}
+      _neededSpawner: {fileID: 101016961}
+      _spawnDelay: 6
+    - _enemy: {fileID: 1674551479236601826, guid: 6b49f0b72acec9340b16eee9ebc6d5ff, type: 3}
+      _neededSpawner: {fileID: 101016961}
+      _spawnDelay: 6
+    - _enemy: {fileID: 1674551479236601826, guid: 6b49f0b72acec9340b16eee9ebc6d5ff, type: 3}
+      _neededSpawner: {fileID: 1251469548}
+      _spawnDelay: 6
+    - _enemy: {fileID: 1674551479236601826, guid: 6b49f0b72acec9340b16eee9ebc6d5ff, type: 3}
+      _neededSpawner: {fileID: 1251469548}
+      _spawnDelay: 6
+    - _enemy: {fileID: 1674551479236601826, guid: 6b49f0b72acec9340b16eee9ebc6d5ff, type: 3}
+      _neededSpawner: {fileID: 278608491}
+      _spawnDelay: 6
+    - _enemy: {fileID: 1674551479236601826, guid: 6b49f0b72acec9340b16eee9ebc6d5ff, type: 3}
+      _neededSpawner: {fileID: 278608491}
+      _spawnDelay: 6
+    - _enemy: {fileID: 1674551479236601826, guid: 6b49f0b72acec9340b16eee9ebc6d5ff, type: 3}
+      _neededSpawner: {fileID: 1158202758}
+      _spawnDelay: 6
+    - _enemy: {fileID: 1674551479236601826, guid: 6b49f0b72acec9340b16eee9ebc6d5ff, type: 3}
+      _neededSpawner: {fileID: 1158202758}
+      _spawnDelay: 6
+  - _waveSettings:
+    - _enemy: {fileID: 1674551479236601826, guid: 1343495f03a0da24cbf55b44bfc01071, type: 3}
+      _neededSpawner: {fileID: 1251469548}
+      _spawnDelay: 2
+    - _enemy: {fileID: 1674551479236601826, guid: 1343495f03a0da24cbf55b44bfc01071, type: 3}
+      _neededSpawner: {fileID: 1251469548}
+      _spawnDelay: 2
+    - _enemy: {fileID: 1674551479236601826, guid: 1343495f03a0da24cbf55b44bfc01071, type: 3}
+      _neededSpawner: {fileID: 1251469548}
+      _spawnDelay: 2.05
+    - _enemy: {fileID: 1674551479236601826, guid: 1343495f03a0da24cbf55b44bfc01071, type: 3}
+      _neededSpawner: {fileID: 1251469548}
+      _spawnDelay: 2.05
+    - _enemy: {fileID: 1674551479236601826, guid: 1343495f03a0da24cbf55b44bfc01071, type: 3}
+      _neededSpawner: {fileID: 1251469548}
+      _spawnDelay: 2.1
+    - _enemy: {fileID: 1674551479236601826, guid: 1343495f03a0da24cbf55b44bfc01071, type: 3}
+      _neededSpawner: {fileID: 1251469548}
+      _spawnDelay: 2.1
+    - _enemy: {fileID: 1674551479236601826, guid: 1343495f03a0da24cbf55b44bfc01071, type: 3}
+      _neededSpawner: {fileID: 1251469548}
+      _spawnDelay: 2.15
+    - _enemy: {fileID: 1674551479236601826, guid: 1343495f03a0da24cbf55b44bfc01071, type: 3}
+      _neededSpawner: {fileID: 202502717}
+      _spawnDelay: 2.15
+    - _enemy: {fileID: 1674551479236601826, guid: 1343495f03a0da24cbf55b44bfc01071, type: 3}
+      _neededSpawner: {fileID: 1251469548}
+      _spawnDelay: 2.2
+    - _enemy: {fileID: 1674551479236601826, guid: 1343495f03a0da24cbf55b44bfc01071, type: 3}
+      _neededSpawner: {fileID: 202502717}
+      _spawnDelay: 2.2
+    - _enemy: {fileID: 1674551479236601826, guid: 1343495f03a0da24cbf55b44bfc01071, type: 3}
+      _neededSpawner: {fileID: 1251469548}
+      _spawnDelay: 2.25
+    - _enemy: {fileID: 1674551479236601826, guid: 1343495f03a0da24cbf55b44bfc01071, type: 3}
+      _neededSpawner: {fileID: 202502717}
+      _spawnDelay: 2.25
+  - _waveSettings:
+    - _enemy: {fileID: 1674551479236601826, guid: 2fa8a78913164c44e9e6a34eb5db81dd, type: 3}
+      _neededSpawner: {fileID: 101016961}
+      _spawnDelay: 1.5
+    - _enemy: {fileID: 1674551479236601826, guid: 2fa8a78913164c44e9e6a34eb5db81dd, type: 3}
+      _neededSpawner: {fileID: 101016961}
+      _spawnDelay: 1.6
+    - _enemy: {fileID: 101016961}
+      _neededSpawner: {fileID: 101016961}
+      _spawnDelay: 1.7
+    - _enemy: {fileID: 1674551479236601826, guid: 2fa8a78913164c44e9e6a34eb5db81dd, type: 3}
+      _neededSpawner: {fileID: 202502717}
+      _spawnDelay: 1.5
+    - _enemy: {fileID: 1674551479236601826, guid: 2fa8a78913164c44e9e6a34eb5db81dd, type: 3}
+      _neededSpawner: {fileID: 202502717}
+      _spawnDelay: 1.6
+    - _enemy: {fileID: 1674551479236601826, guid: 2fa8a78913164c44e9e6a34eb5db81dd, type: 3}
+      _neededSpawner: {fileID: 202502717}
+      _spawnDelay: 1.7
+    - _enemy: {fileID: 1674551479236601826, guid: 2fa8a78913164c44e9e6a34eb5db81dd, type: 3}
+      _neededSpawner: {fileID: 1251469548}
+      _spawnDelay: 1.5
+    - _enemy: {fileID: 1674551479236601826, guid: 2fa8a78913164c44e9e6a34eb5db81dd, type: 3}
+      _neededSpawner: {fileID: 1251469548}
+      _spawnDelay: 1.6
+    - _enemy: {fileID: 1674551479236601826, guid: 2fa8a78913164c44e9e6a34eb5db81dd, type: 3}
+      _neededSpawner: {fileID: 1251469548}
+      _spawnDelay: 1.7
+    - _enemy: {fileID: 1674551479236601826, guid: 2fa8a78913164c44e9e6a34eb5db81dd, type: 3}
+      _neededSpawner: {fileID: 278608491}
+      _spawnDelay: 1.5
+    - _enemy: {fileID: 1674551479236601826, guid: 2fa8a78913164c44e9e6a34eb5db81dd, type: 3}
+      _neededSpawner: {fileID: 278608491}
+      _spawnDelay: 1.6
+    - _enemy: {fileID: 1674551479236601826, guid: 2fa8a78913164c44e9e6a34eb5db81dd, type: 3}
+      _neededSpawner: {fileID: 278608491}
+      _spawnDelay: 1.5
+    - _enemy: {fileID: 1674551479236601826, guid: 2fa8a78913164c44e9e6a34eb5db81dd, type: 3}
+      _neededSpawner: {fileID: 278608491}
+      _spawnDelay: 1.5
+    - _enemy: {fileID: 1674551479236601826, guid: 2fa8a78913164c44e9e6a34eb5db81dd, type: 3}
+      _neededSpawner: {fileID: 1158202758}
+      _spawnDelay: 1.7
+    - _enemy: {fileID: 1674551479236601826, guid: 2fa8a78913164c44e9e6a34eb5db81dd, type: 3}
+      _neededSpawner: {fileID: 1158202758}
+      _spawnDelay: 1.6
+  - _waveSettings:
+    - _enemy: {fileID: 1674551479236601826, guid: 745b16db409757749be132c4554074bd, type: 3}
+      _neededSpawner: {fileID: 101016961}
+      _spawnDelay: 1
+    - _enemy: {fileID: 1674551479236601826, guid: 745b16db409757749be132c4554074bd, type: 3}
+      _neededSpawner: {fileID: 101016961}
+      _spawnDelay: 1.1
+    - _enemy: {fileID: 1674551479236601826, guid: 745b16db409757749be132c4554074bd, type: 3}
+      _neededSpawner: {fileID: 101016961}
+      _spawnDelay: 1.2
+    - _enemy: {fileID: 1674551479236601826, guid: 745b16db409757749be132c4554074bd, type: 3}
+      _neededSpawner: {fileID: 101016961}
+      _spawnDelay: 1.3
+    - _enemy: {fileID: 1674551479236601826, guid: 745b16db409757749be132c4554074bd, type: 3}
+      _neededSpawner: {fileID: 101016961}
+      _spawnDelay: 1.4
+    - _enemy: {fileID: 1674551479236601826, guid: 745b16db409757749be132c4554074bd, type: 3}
+      _neededSpawner: {fileID: 202502717}
+      _spawnDelay: 1
+    - _enemy: {fileID: 1674551479236601826, guid: 745b16db409757749be132c4554074bd, type: 3}
+      _neededSpawner: {fileID: 202502717}
+      _spawnDelay: 1.1
+    - _enemy: {fileID: 1674551479236601826, guid: 745b16db409757749be132c4554074bd, type: 3}
+      _neededSpawner: {fileID: 202502717}
+      _spawnDelay: 1.2
+    - _enemy: {fileID: 1674551479236601826, guid: 745b16db409757749be132c4554074bd, type: 3}
+      _neededSpawner: {fileID: 202502717}
+      _spawnDelay: 1.3
+    - _enemy: {fileID: 1674551479236601826, guid: 745b16db409757749be132c4554074bd, type: 3}
+      _neededSpawner: {fileID: 202502717}
+      _spawnDelay: 1.4
+    - _enemy: {fileID: 1674551479236601826, guid: 745b16db409757749be132c4554074bd, type: 3}
+      _neededSpawner: {fileID: 1251469548}
+      _spawnDelay: 1
+    - _enemy: {fileID: 1674551479236601826, guid: 745b16db409757749be132c4554074bd, type: 3}
+      _neededSpawner: {fileID: 1251469548}
+      _spawnDelay: 1.1
+    - _enemy: {fileID: 1674551479236601826, guid: 745b16db409757749be132c4554074bd, type: 3}
+      _neededSpawner: {fileID: 1251469548}
+      _spawnDelay: 1.2
+    - _enemy: {fileID: 1674551479236601826, guid: 745b16db409757749be132c4554074bd, type: 3}
+      _neededSpawner: {fileID: 1251469548}
+      _spawnDelay: 1.3
+    - _enemy: {fileID: 1674551479236601826, guid: 745b16db409757749be132c4554074bd, type: 3}
+      _neededSpawner: {fileID: 1251469548}
+      _spawnDelay: 1.4
+    - _enemy: {fileID: 1674551479236601826, guid: 745b16db409757749be132c4554074bd, type: 3}
+      _neededSpawner: {fileID: 278608491}
+      _spawnDelay: 1
+    - _enemy: {fileID: 1674551479236601826, guid: 745b16db409757749be132c4554074bd, type: 3}
+      _neededSpawner: {fileID: 278608491}
+      _spawnDelay: 1.1
+    - _enemy: {fileID: 1674551479236601826, guid: 745b16db409757749be132c4554074bd, type: 3}
+      _neededSpawner: {fileID: 278608491}
+      _spawnDelay: 1.2
+    - _enemy: {fileID: 1674551479236601826, guid: 745b16db409757749be132c4554074bd, type: 3}
+      _neededSpawner: {fileID: 278608491}
+      _spawnDelay: 1.3
+    - _enemy: {fileID: 1674551479236601826, guid: 745b16db409757749be132c4554074bd, type: 3}
+      _neededSpawner: {fileID: 278608491}
+      _spawnDelay: 1.4
+    - _enemy: {fileID: 1674551479236601826, guid: 745b16db409757749be132c4554074bd, type: 3}
+      _neededSpawner: {fileID: 1158202758}
+      _spawnDelay: 1
+    - _enemy: {fileID: 1674551479236601826, guid: 745b16db409757749be132c4554074bd, type: 3}
+      _neededSpawner: {fileID: 1158202758}
+      _spawnDelay: 1.1
+    - _enemy: {fileID: 1674551479236601826, guid: 745b16db409757749be132c4554074bd, type: 3}
+      _neededSpawner: {fileID: 278608491}
+      _spawnDelay: 1.4
+    - _enemy: {fileID: 1674551479236601826, guid: 745b16db409757749be132c4554074bd, type: 3}
+      _neededSpawner: {fileID: 1158202758}
+      _spawnDelay: 1.3
+    - _enemy: {fileID: 1674551479236601826, guid: 745b16db409757749be132c4554074bd, type: 3}
+      _neededSpawner: {fileID: 278608491}
+      _spawnDelay: 1.4
+  - _waveSettings:
+    - _enemy: {fileID: 1674551479236601826, guid: 9255cd4914bda6440b9554e0bc3b84ed, type: 3}
+      _neededSpawner: {fileID: 1251469548}
+      _spawnDelay: 8
   _lineControllers:
   - {fileID: 101016963}
   - {fileID: 202502720}
@@ -1190,13 +1853,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 330585543}
   serializedVersion: 2
-  m_LocalRotation: {x: -0, y: 0.9914449, z: -0.13052648, w: 0}
-  m_LocalPosition: {x: 3.44, y: 7.55, z: 16.89}
+  m_LocalRotation: {x: -0, y: 0.99551654, z: -0.09458837, w: 0}
+  m_LocalPosition: {x: 3.61, y: 6.96, z: 17.35}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 165, y: 0, z: -180}
+  m_LocalEulerAnglesHint: {x: 169.145, y: 0, z: -180}
 --- !u!114 &330585547
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1330,7 +1993,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _resources: 1
-  _startResources: 10
+  _startResources: 24
   _recourcesText: {fileID: 365129459}
 --- !u!114 &365129459 stripped
 MonoBehaviour:
@@ -1734,6 +2397,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3357482280706465122, guid: b79743ab1b39ae948817c6cb3fe6448c, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6252277848503032932, guid: b79743ab1b39ae948817c6cb3fe6448c, type: 3}
+      propertyPath: m_PresetInfoIsWorld
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6645795537002305482, guid: b79743ab1b39ae948817c6cb3fe6448c, type: 3}
@@ -2184,6 +2851,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 485937436}
     m_Modifications:
+    - target: {fileID: -1306203501250959310, guid: 85fa4b6da79ddfe4da8002274972038a, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 408254832296088881, guid: 85fa4b6da79ddfe4da8002274972038a, type: 3}
       propertyPath: m_LocalPosition.x
       value: -0.272
@@ -2224,9 +2895,21 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 39.145
       objectReference: {fileID: 0}
+    - target: {fileID: 2157462040419256636, guid: 85fa4b6da79ddfe4da8002274972038a, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.357
+      objectReference: {fileID: 0}
+    - target: {fileID: 2157462040419256636, guid: 85fa4b6da79ddfe4da8002274972038a, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.221
+      objectReference: {fileID: 0}
     - target: {fileID: 3885039034251925984, guid: 85fa4b6da79ddfe4da8002274972038a, type: 3}
       propertyPath: m_Name
       value: Drevo
+      objectReference: {fileID: 0}
+    - target: {fileID: 6486376248477500777, guid: 85fa4b6da79ddfe4da8002274972038a, type: 3}
+      propertyPath: _maxHealth
+      value: 500
       objectReference: {fileID: 0}
     - target: {fileID: 8072574016591659969, guid: 85fa4b6da79ddfe4da8002274972038a, type: 3}
       propertyPath: m_LocalPosition.x
@@ -2293,11 +2976,13 @@ MonoBehaviour:
   _cardHolderPosition: {fileID: 901102237}
   _card: {fileID: 9101722277332088448, guid: 2bb76369c54dd9e42a9c23f096632384, type: 3}
   _cardSO:
+  - {fileID: 11400000, guid: 0dc5ac41c084c21449d11cef152dd27a, type: 2}
+  - {fileID: 11400000, guid: 01e7a53899530e14b9186e6576ac8c23, type: 2}
+  - {fileID: 11400000, guid: 0eccd9a1fbf80e449808ea224b7c64f0, type: 2}
   - {fileID: 11400000, guid: d2f7364bdfcf48f4d8642eb1c5b1df75, type: 2}
   - {fileID: 11400000, guid: b9fd153c0446a1a459ff864da99c5848, type: 2}
-  - {fileID: 11400000, guid: 0eccd9a1fbf80e449808ea224b7c64f0, type: 2}
-  - {fileID: 11400000, guid: 01e7a53899530e14b9186e6576ac8c23, type: 2}
   _plantedCards:
+  - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
@@ -2311,9 +2996,21 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 485937436}
     m_Modifications:
+    - target: {fileID: -1306203501250959310, guid: 85fa4b6da79ddfe4da8002274972038a, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2157462040419256636, guid: 85fa4b6da79ddfe4da8002274972038a, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.056000084
+      objectReference: {fileID: 0}
     - target: {fileID: 3885039034251925984, guid: 85fa4b6da79ddfe4da8002274972038a, type: 3}
       propertyPath: m_Name
       value: Drevo (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6486376248477500777, guid: 85fa4b6da79ddfe4da8002274972038a, type: 3}
+      propertyPath: _maxHealth
+      value: 500
       objectReference: {fileID: 0}
     - target: {fileID: 8072574016591659969, guid: 85fa4b6da79ddfe4da8002274972038a, type: 3}
       propertyPath: m_LocalPosition.x
@@ -2589,7 +3286,7 @@ GameObject:
   - component: {fileID: 1158202760}
   - component: {fileID: 1158202761}
   m_Layer: 0
-  m_Name: Enemy Spawner (4)
+  m_Name: Enemy Spawner under
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2929,7 +3626,7 @@ GameObject:
   - component: {fileID: 1251469549}
   - component: {fileID: 1251469551}
   m_Layer: 0
-  m_Name: Enemy Spawner (2)
+  m_Name: Enemy Spawner mid
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4326,6 +5023,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 485937436}
     m_Modifications:
+    - target: {fileID: -1306203501250959310, guid: 85fa4b6da79ddfe4da8002274972038a, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 408254832296088881, guid: 85fa4b6da79ddfe4da8002274972038a, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0.040561676
@@ -4366,9 +5067,21 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 154.861
       objectReference: {fileID: 0}
+    - target: {fileID: 2157462040419256636, guid: 85fa4b6da79ddfe4da8002274972038a, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.1960001
+      objectReference: {fileID: 0}
+    - target: {fileID: 2157462040419256636, guid: 85fa4b6da79ddfe4da8002274972038a, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 1.201
+      objectReference: {fileID: 0}
     - target: {fileID: 3885039034251925984, guid: 85fa4b6da79ddfe4da8002274972038a, type: 3}
       propertyPath: m_Name
       value: Drevo (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6486376248477500777, guid: 85fa4b6da79ddfe4da8002274972038a, type: 3}
+      propertyPath: _maxHealth
+      value: 500
       objectReference: {fileID: 0}
     - target: {fileID: 8072574016591659969, guid: 85fa4b6da79ddfe4da8002274972038a, type: 3}
       propertyPath: m_LocalPosition.x
@@ -4472,9 +5185,21 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: -74.109
       objectReference: {fileID: 0}
+    - target: {fileID: 2157462040419256636, guid: 85fa4b6da79ddfe4da8002274972038a, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.427
+      objectReference: {fileID: 0}
+    - target: {fileID: 2157462040419256636, guid: 85fa4b6da79ddfe4da8002274972038a, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.2940001
+      objectReference: {fileID: 0}
     - target: {fileID: 3885039034251925984, guid: 85fa4b6da79ddfe4da8002274972038a, type: 3}
       propertyPath: m_Name
       value: Drevo (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6486376248477500777, guid: 85fa4b6da79ddfe4da8002274972038a, type: 3}
+      propertyPath: _maxHealth
+      value: 500
       objectReference: {fileID: 0}
     - target: {fileID: 8072574016591659969, guid: 85fa4b6da79ddfe4da8002274972038a, type: 3}
       propertyPath: m_LocalPosition.x
@@ -4838,13 +5563,13 @@ Transform:
 SceneRoots:
   m_ObjectHideFlags: 0
   m_Roots:
+  - {fileID: 290640348}
   - {fileID: 330585546}
   - {fileID: 410087041}
   - {fileID: 540658267}
   - {fileID: 316693705}
   - {fileID: 53724040}
   - {fileID: 574241043}
-  - {fileID: 290640348}
   - {fileID: 1771824341}
   - {fileID: 1510397389}
   - {fileID: 485937436}
