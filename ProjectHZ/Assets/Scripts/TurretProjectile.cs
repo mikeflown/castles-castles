@@ -7,7 +7,7 @@ public class TurretProjectile : MonoBehaviour
 
     private void Awake()
     {
-        Destroy(this.gameObject, 5f);
+        Destroy(this.gameObject, 15f);
     }
 
     private void FixedUpdate()

@@ -12,8 +12,9 @@ GameObject:
   - component: {fileID: 7901950572593867064}
   - component: {fileID: 8513264047777369159}
   - component: {fileID: -1249914437490527148}
+  - component: {fileID: 354536204594976069}
   m_Layer: 0
-  m_Name: Mage Projectile
+  m_Name: Cerkov Projectile
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -28,8 +29,8 @@ Transform:
   m_GameObject: {fileID: 3417536179498498337}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.005726, y: 0.0070817, z: -0.069794}
-  m_LocalScale: {x: 0.034175556, y: 0.034175556, z: 0.034175556}
+  m_LocalPosition: {x: -0.11604, y: -0.18414, z: -0.024431}
+  m_LocalScale: {x: 0.11177796, y: 0.11177796, z: 0.11177796}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 5980033256516149640}
@@ -54,8 +55,8 @@ SphereCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Radius: 1.2161311
-  m_Center: {x: -0.48387766, y: -0.32580346, z: -0.90444326}
+  m_Radius: 1.112251
+  m_Center: {x: 1.0751716, y: 0.66115654, z: -0.5767034}
 --- !u!114 &8513264047777369159
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -68,7 +69,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 72cc27fc2ad751f4aa27c9699ecb2a4d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _moveSpeed: 0.3
+  _moveSpeed: 0.008
   _damage: 3
 --- !u!54 &-1249914437490527148
 Rigidbody:
@@ -97,6 +98,28 @@ Rigidbody:
   m_Interpolate: 1
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!95 &354536204594976069
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3417536179498498337}
+  m_Enabled: 0
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 6fdfec666585f3644a773f07e192b0ef, type: 2}
+  m_CullingMode: 2
+  m_UpdateMode: 1
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &6464504109454768946
 GameObject:
   m_ObjectHideFlags: 0
@@ -124,7 +147,7 @@ Transform:
   m_GameObject: {fileID: 6464504109454768946}
   serializedVersion: 2
   m_LocalRotation: {x: 0.07733954, y: 0.39501837, z: -0.9055332, w: -0.13412261}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 1.62, y: 1, z: 0.52}
   m_LocalScale: {x: 54.37069, y: 54.370686, z: 54.37069}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -161,7 +184,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 39efb9de14cc8f84e9bd67e4b05c7e72, type: 2}
+  - {fileID: 2100000, guid: cff7d4ebcd6a7834b963359dcdf98225, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0

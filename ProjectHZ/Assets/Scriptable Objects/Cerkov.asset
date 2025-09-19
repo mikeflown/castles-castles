@@ -13,5 +13,5 @@ MonoBehaviour:
   m_Name: Cerkov
   m_EditorClassIdentifier: 
   icon: {fileID: 21300000, guid: ed3ced9d477bd2c46ba7c5bb4e969483, type: 3}
-  prefab: {fileID: 1674551479236601826, guid: d3262929aa2bf9346837a3b7d1d38868, type: 3}
+  prefab: {fileID: 3885039034251925984, guid: 6011b3e9bdea0e541b41d2eee2e77e7b, type: 3}
   cost: 1

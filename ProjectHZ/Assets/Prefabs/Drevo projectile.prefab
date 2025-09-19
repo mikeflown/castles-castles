@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 8513264047777369159}
   - component: {fileID: -1249914437490527148}
   m_Layer: 0
-  m_Name: Mage Projectile
+  m_Name: Drevo projectile
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -28,8 +28,8 @@ Transform:
   m_GameObject: {fileID: 3417536179498498337}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.005726, y: 0.0070817, z: -0.069794}
-  m_LocalScale: {x: 0.034175556, y: 0.034175556, z: 0.034175556}
+  m_LocalPosition: {x: 0.0076347, y: 0.0094421, z: -0.093055}
+  m_LocalScale: {x: 0.012235204, y: 0.012235204, z: 0.012235204}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 5980033256516149640}
@@ -68,8 +68,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 72cc27fc2ad751f4aa27c9699ecb2a4d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _moveSpeed: 0.3
-  _damage: 3
+  _moveSpeed: 0.0009
+  _damage: 4
 --- !u!54 &-1249914437490527148
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -161,7 +161,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 39efb9de14cc8f84e9bd67e4b05c7e72, type: 2}
+  - {fileID: 2100000, guid: 4148e308359884f4281ed1400b61177d, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
