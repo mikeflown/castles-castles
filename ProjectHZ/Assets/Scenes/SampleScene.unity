@@ -1031,6 +1031,8 @@ MonoBehaviour:
   _cardSO:
   - {fileID: 11400000, guid: d2f7364bdfcf48f4d8642eb1c5b1df75, type: 2}
   - {fileID: 11400000, guid: b9fd153c0446a1a459ff864da99c5848, type: 2}
+  - {fileID: 11400000, guid: 0eccd9a1fbf80e449808ea224b7c64f0, type: 2}
+  - {fileID: 11400000, guid: 01e7a53899530e14b9186e6576ac8c23, type: 2}
   _plantedCards:
   - {fileID: 0}
   - {fileID: 0}
